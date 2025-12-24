@@ -2,7 +2,7 @@
 
 friend1Details = {name : "Bidhan Saha", roll : 1, bestFriend : 2}
 
-friend2Details = {name : "Borson Saha", roll : 2, bestFriend : 11}
+friend2Details = {name : "Borson Saha", roll : 2, bestFriend : 1}
 
 
 function isBestFriend(f1, f2){
@@ -12,7 +12,11 @@ function isBestFriend(f1, f2){
   }
 
 
-  
+  if(!("name" in f1 && "roll" in f1 && "bestFriend" in f1) || !("name" in f2 && "roll" in f2 && "bestFriend" in f2 )){
+    return false;
+  }
+
+
     if(f1.roll === f2.bestFriend && f2.bestFriend === f1.roll){
       return true;
     }
