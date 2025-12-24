@@ -1,6 +1,9 @@
 /*Problem-03 : Who will Win  ( 🥭Mango /🍌 Banana )*/ 
 
 function electionResult(votes){
+  if(!Array.isArray(votes)){
+    return "Invalid"
+  }
 
 }
 
